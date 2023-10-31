@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D8C4FF;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8C52FF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.checkbox-label {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: left;
+    color: #000;
+}
+
+.checkbox-label input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.checkbox-label input[type="checkbox"]:checked {
+    background-color: white;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.center {
+    text-align: center;
+}
+
+.submit-button {
+    background-color: #00BF63;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.submit-button:hover {
+    background-color: red;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.botaocadastrar{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C1FF72;
+    background-color: #00BF63;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 20px;
+    margin-left: 75px;
+    text-decoration: none;
+    text-align: center;
+}

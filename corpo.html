@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.0.min.js"></script>
+
+    <title>Ficha Médica</title>
+
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #D8C4FF;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #8C52FF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1
+        {
+            text-align: center;
+            color: white;
+        }
+        .checkbox-label {
+        display: inline-block;
+        margin-right: 10px;
+        text-align: left;
+        color: white;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid white;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    
+    .checkbox-label input[type="checkbox"]:checked {
+        background-color: #bca1f3;
+    }
+        input[type="text"],
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .bt
+        {
+            width: 100px;
+            height: 50px;
+            background-color: #bca1f3;
+            border-radius: 10px;
+            border: none;
+        }
+        .menoroumaior
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Localização dos Traumas</h1>
+                    <div class="menoroumaior">     
+                    <a class="botaocadastrar" href="maior.html">
+                        <div class="q5" >
+                            <button class="bt">Maior de 5</button>
+                        </div>
+                    </a>
+
+                    <a class="botaocadastrar" href="menor.html">
+                        <div class="q5" >
+                            <button class="bt">Menor de 5</button>
+                        </div>
+                    </a>
+
+            </div>
+            
+    </div>
+</body>
+</html>

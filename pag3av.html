@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Paciente (Nível de Consciência)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D8C4FF;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #8C52FF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: white;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .submit-button {
+            background-color: #00BF63;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .submit-button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliação do Paciente menor de 5 anos (Nível de Consciência)</h1>
+        <form action="pag3av.php" method="post">
+            <div class="section">
+                <h2>Abertura Ocular:</h2>
+                <label>
+                    <input type="radio" name="abertura_ocular"value="Espontânea"> Espontânea (4)
+                </label>
+                <label>
+                    <input type="radio" name="abertura_ocular" value="Comando Verbal"> Comando Verbal (3)
+                </label>
+                <label>
+                    <input type="radio" name="abertura_ocular" value="Estímulo Doloroso"> Estímulo Doloroso (2)
+                </label>
+                <label>
+                    <input type="radio" name="abertura_ocular" value="Nenhuma"> Nenhuma (1)
+                </label>
+            </div>
+
+            <div class="section">
+                <h2>Resposta Verbal:</h2>
+                <label>
+                    <input type="radio" name="resposta_verbal" value="PALAVRAS E FRASE APROPRIADAS"> Palavras e Frase Apropriadas (5)
+                </label>
+                <label>
+                    <input type="radio" name="resposta_verbal" value="PALAVRAS INAPROPRIADAS"> Palavras Inapropriadas (4)
+                </label>
+                <label>
+                    <input type="radio" name="resposta_verbal" value="CHORO PERSISTENTE OU GRITOS"> Choro Persistente ou Gritos (3)
+                </label>
+                <label>
+                    <input type="radio" name="resposta_verbal" value="SONS IMCOMPREENSÍVEIS"> Sons Imcomprensíveis (2)
+                </label>
+                <label>
+                    <input type="radio" name="resposta_verbal" value="NENHUMA RESPOSTA VERBAL"> Nenhuma Resposta Verbal (1)
+                </label>
+            </div>
+
+            <div class="section">
+                <h2>Resposta Motora:</h2>
+                <label>
+                    <input type="radio" name="resposta_motora" value="OBEDECE PRONTAMENTE"> Obedece Prontamente (6)
+                </label>
+                <label>
+                    <input type="radio" name="resposta_motora" value="LOCALIZA DOR OU ESTÍMULO TÁTIL"> Localiza Dor ou Estímulo Tátil (5)
+                </label>
+                <label>
+                    <input type="radio" name="resposta_motora" value="RETIRADA DO SEGMENTO ESTIMULADO"> Retirada do Segmento Estimulado (4)
+                </label>
+                <label>
+                    <input type="radio" name="resposta_motora" value="FLEXÃO ANORMAL (DECORTICAÇÃO)"> Flexão Anormal (Decorticação) (3)
+                </label>
+                <label>
+                    <input type="radio" name="resposta_motora" value="EXTENSÃO ANORMAL (DECEREBRAÇÃO)"> Extensão Anormal (Decerebração) (2)
+                </label>
+                <label>
+                    <input type="radio" name="resposta_motora" value="AUSÊNCIA (PARALISIA FLÁCIDA, HIPOTONIA)"> Ausência (Paralisia Flácida, Hipotonia) (1)
+                </label>
+            </div>
+
+        <div id="resultado"></div>
+            <label for="local">Total (GCS)(3-15):</label>
+            <input type="total" id="nome" name="number">
+        </div>
+
+        <div class="center">
+            <input type="submit" class="submit-button" value="Enviar">
+        </div>
+        </form>
+    </div>
+    <script>
+        // Função para calcular a soma dos valores selecionados
+        function calcularSoma() {
+            var aberturaOcular = parseInt(document.querySelector('input[name="abertura_ocular"]:checked').value=4);
+            var aberturaOcular = parseInt(document.querySelector('input[name="abertura_ocular"]:checked').value=3);
+            var aberturaOcular = parseInt(document.querySelector('input[name="abertura_ocular"]:checked').value=2);
+            var aberturaOcular = parseInt(document.querySelector('input[name="abertura_ocular"]:checked').value=1);
+            var respostaVerbal = parseInt(document.querySelector('input[name="resposta_verbal"]:checked').value=5);
+            var respostaVerbal = parseInt(document.querySelector('input[name="resposta_verbal"]:checked').value=4);
+            var respostaVerbal = parseInt(document.querySelector('input[name="resposta_verbal"]:checked').value=3);
+            var respostaVerbal = parseInt(document.querySelector('input[name="resposta_verbal"]:checked').value=2);
+            var respostaVerbal = parseInt(document.querySelector('input[name="resposta_verbal"]:checked').value=1);
+            var respostaMotora = parseInt(document.querySelector('input[name="resposta_motora"]:checked').value=6);
+            var respostaMotora = parseInt(document.querySelector('input[name="resposta_motora"]:checked').value=5);
+            var respostaMotora = parseInt(document.querySelector('input[name="resposta_motora"]:checked').value=4);
+            var respostaMotora = parseInt(document.querySelector('input[name="resposta_motora"]:checked').value=3);
+            var respostaMotora = parseInt(document.querySelector('input[name="resposta_motora"]:checked').value=2);
+            var respostaMotora = parseInt(document.querySelector('input[name="resposta_motora"]:checked').value=1);
+
+    
+            // Calcular a soma
+            var soma = aberturaOcular + aberturaOcular + respostaVerbal + respostaVerbal + respostaMotora + respostaMotora;
+    
+            // Exibir o resultado
+            document.getElementById('resultado').textContent = 'Resultado (GCS): ' + soma;
+        }
+    
+        // Adicionar um ouvinte de evento para o envio do formulário
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Impedir o envio padrão do formulário
+            calcularSoma(); // Chamar a função para calcular a soma
+        });
+    </script>
+    
+</body>
+</html>

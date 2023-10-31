@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Verificação</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #D8C4FF;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto; /* Centralizar a tabela */
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+            color: white;
+        }
+
+        th {
+            background-color: #D8C4FF;
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #9060ee;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            display: none; /* Ocultar as checkboxes reais */
+        }
+
+        .checkbox-group label {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            padding-left: 30px;
+        }
+
+        .checkbox-group label::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 1px solid white;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .fundo{
+            background-color: #8C52FF;
+        }
+
+        .checkbox-group input[type="checkbox"]:checked + label::before {
+            background-color: rgb(174, 0, 255); /* Cor de fundo quando a checkbox está selecionada */
+        }
+        h1{
+            background-color: #8C52FF;
+            color: white;
+        }
+
+        #submit-button {
+            margin: 20px auto; /* Centralizar o botão */
+            display: block;
+            background-color: #00BF63;
+        }
+    </style>
+</head>
+<body>
+<div class="fundo">
+    <h1>Avaliação Cinemática</h1> <!-- Título adicionado aqui -->
+    <table>
+        <thead>
+            <tr>
+                <th>Opção</th>
+                <th>Sim</th>
+                <th>Não</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="checkbox-group">
+                <td>Distúrbio de comportamento</td>
+                <td>
+                    <input type="checkbox" id="opcao1_sim" name="opcao1" value="Sim">
+                    <label for="opcao1_sim"></label>
+                </td>
+                <td>
+                    <input type="checkbox" id="opcao1_nao" name="opcao1" value="Não">
+                    <label for="opcao1_nao"></label>
+                </td>
+            </tr>
+            <tr class="checkbox-group">
+            <td>Encontrado de capacete</td>
+                <td>
+                    <input type="checkbox" id="opcao2_sim" name="opcao2" value="Sim">
+                    <label for="opcao2_sim"></label>
+                </td>
+                <td>
+                    <input type="checkbox" id="opcao2_nao" name="opcao2" value="Não">
+                    <label for="opcao2_nao"></label>
+                </tr>
+                <tr class="checkbox-group">
+                    <td>Encontrado de cinto</td>
+                        <td>
+                            <input type="checkbox" id="opcao3_sim" name="opcao3" value="Sim">
+                            <label for="opcao3_sim"></label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="opcao3_nao" name="opcao3" value="Não">
+                            <label for="opcao3_nao"></label>
+                        </tr>
+                        <tr class="checkbox-group">
+                            <td>Para-brisas avariado</td>
+                                <td>
+                                    <input type="checkbox" id="opcao4_sim" name="opcao4" value="Sim">
+                                    <label for="opcao4_sim"></label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="opcao4_nao" name="opcao4" value="Não">
+                                    <label for="opcao4_nao"></label>
+                                </tr>
+                                <tr class="checkbox-group">
+                                    <td>Caminhando na cena</td>
+                                        <td>
+                                            <input type="checkbox" id="opcao5_sim" name="opcao5" value="Sim">
+                                            <label for="opcao5_sim"></label>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" id="opcao5_nao" name="opcao5" value="Não">
+                                            <label for="opcao5_nao"></label>
+                                        </tr>
+                                            <tr class="checkbox-group">
+                                                <td>Painel avariado</td>
+                                                    <td>
+                                                        <input type="checkbox" id="opcao6_sim" name="opcao6" value="Sim">
+                                                        <label for="opcao6_sim"></label>
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="opcao6_nao" name="opcao6" value="Não">
+                                                        <label for="opcao6_nao"></label>
+                                                    </tr>
+                                                    <tr class="checkbox-group">
+                                                        <td>Volante torcido</td>
+                                                            <td>
+                                                                <input type="checkbox" id="opcao7_sim" name="opcao7" value="Sim">
+                                                                <label for="opcao7_sim"></label>
+                                                            </td>
+                                                            <td>
+                                                                <input type="checkbox" id="opcao7_nao" name="opcao7" value="Não">
+                                                                <label for="opcao7_nao"></label>
+                                                            </tr>
+</div>
+            <!-- Resto das linhas da tabela -->
+        </tbody>
+    </table>
+    <button id="submit-button" type="submit">Enviar</button>
+
+    <script>
+        const checkboxes = document.querySelectorAll('.checkbox-group input[type="checkbox"]');
+        
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                if (this.checked) {
+                    checkboxes.forEach(otherCheckbox => {
+                        if (otherCheckbox !== this && otherCheckbox.name === this.name) {
+                            otherCheckbox.checked = false;
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D8C4FF;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8C52FF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+h2
+{
+    width: 200px;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: -15px;
+}
+.tabela
+{
+    display: flex;
+    width: 100%;
+    text-align: center;
+
+}
+input
+{
+    width: 90%;
+}
+.center {
+    text-align: center;
+}
+.submit-button {
+    background-color: #00BF63;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5px;
+    width: 100px;
+}
+
+.submit-button:hover {
+    background-color: red;
+}
+.botaocadastrar
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #C1FF72;
+    background-color: #00BF63;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 20px;
+    margin-left: 75px;
+    text-decoration: none;
+    text-align: center;
+    }

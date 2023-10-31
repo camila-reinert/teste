@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sinaisvitais</title>
+    <style>
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #D8C4FF;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #8C52FF;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    h1 {
+        text-align: center;
+        color: white;
+    }
+
+    h2 {
+        text-align: center;
+        color: white;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-top: 10px;
+        color: white;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        color: #000;
+    }
+
+    .checkbox-label {
+        display: inline-block;
+        margin-right: 10px;
+        text-align: left;
+        color: #000;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .checkbox-label input[type="checkbox"]:checked {
+        background-color: white;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .submit-button {
+        background-color: #00BF63;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    .submit-button:hover {
+        background-color: red;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Paciente</h1>
+        <form>
+            <label>Pressão arterial(mmHg):</label>
+            <input type="text" name="nome">
+            
+            <label for="idade">Pulso(BSPM):</label>
+            <input type="text" name="idade">
+            
+            <label>Respiração(M.R.M):</label>
+            <input type="text" name="rg_cpf">
+            
+            <label>Saturação(%HGT):</label>
+            <input type="text" name="fone">
+            
+            <!-- Seção de Temperatura -->
+            <h2>Temperatura(°C)</h2>
+            <div class="form-group">
+                <input type="text" name="temperatura" placeholder="Digite a temperatura">
+                <label class="checkbox-label" for="anormalCheckbox">
+                    <input type="checkbox" id="anormalCheckbox" name="anormal" value="anormal">Anormal
+                </label>
+            </div>
+            
+            <!-- Seção de Perfusão -->
+            <h2>Perfusão</h2>
+            <div class="form-group">
+                 <label class="checkbox-label" for="maior_que_2segCheckbox">
+            <input type="checkbox" id="maior_que_2segCheckbox" name="perfusao" value="maior_que_2seg"> >2seg
+                </label>
+            <label class="checkbox-label" for="menor_que_2segCheckbox">
+                <input type="checkbox" id="menor_que_2segCheckbox" name="perfusao" value="menor_que_2seg"> menor 2seg
+            </label>
+            <label class="checkbox-label" for="normalCheckbox">
+            <input type="checkbox" id="normalCheckbox" name="perfusao" value="normal"> Normal
+            </label>
+</div>
+
+            <!-- Adicione mais campos aqui conforme necessário -->
+
+            <div class="center">
+                <input type="submit" class="submit-button" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

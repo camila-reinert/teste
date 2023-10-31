@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica de Ocorrências de Emergência</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D8C4FF;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #8C52FF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+            color: white;
+        }
+        .form-group {
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        color:#000;
+    }
+
+    .checkbox-label {
+        display: inline-block;
+        margin-right: 10px;
+        text-align: left;
+        color: #000;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    
+    .checkbox-label input[type="checkbox"]:checked {
+        background-color: #8C52FF;
+    }
+        input[type="text"],
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .submit-button {
+            background-color: #00BF63;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .submit-button:hover {
+            background-color: red;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Paciente</h1>
+        <form action="pag1.php" method="post">
+            <label>Data:</label>
+            <input type="date" name="data" placeholder="data">
+
+            <label>Sexo:</label>
+            <select name="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <label>Nome Hospital:</label>
+            <input type="text" name="nome_hospital" placeholder="nome_hospital"> <!-- Corrigido o nome do campo -->
+
+            <label>Nome do paciente:</label>
+            <input type="text" name="nome_paciente" placeholder="nome_paciente">
+
+            <label for="idade">Selecione a Idade:</label>
+            <input type="number" name="idade" placeholder="idade">
+
+            <label>RG/CPF:</label>
+            <input type="text" name="rg_cpf" placeholder="rg_cpf"> <!-- Corrigido o nome do campo -->
+
+            <label>Fone:</label>
+            <input type="text" name="fone" placeholder="fone"> <!-- Corrigido o nome do campo -->
+
+            <label>Acompanhante:</label>
+            <input type="text" name="acompanhante" placeholder="acompanhante"> <!-- Corrigido o nome do campo -->
+
+            <label>Idade acomp.:</label>
+            <input type="number" name="idade_acompanhante" placeholder="idade_acompanhante">
+
+            <label>Local da ocorrência</label>
+            <input type="text" name="local_ocorrencia" placeholder="local_ocorrencia">
+
+            <label for="local">N° USB:</label>
+            <input type="number" name="n_usb" placeholder="n_usb">
+
+            <label for="local">cod UR:</label>
+            <input type="number" name="cod_ur" placeholder="cod_ur">
+
+            <label for="local">N° ocorr.:</label>
+            <input type="number" name="n_ocorr" placeholder="n_ocorr">
+
+            <label for="local">cód ps.:</label>
+            <input type="text" name="cod_ps" placeholder="cod_ps">
+
+            <label for="local">Desp:</label>
+            <input type="text" name="desp" placeholder="desp">
+
+            <label for="local">H.CH:</label>
+            <input type="text" name="h_ch" placeholder="h_ch">
+
+            <label for="local">KM.Final:</label>
+            <input type="number" name="km_final" placeholder="km_final">
+
+            <label for="local">Cód.SIA/SUS:</label>
+            <input type="text" name="cod_sia_sus" placeholder="cod_sia_sus">
+            
+            <input type="submit" value="GRAVAR" class="submit-button">
+        </form>
+    </div>
+</body>
+</html>

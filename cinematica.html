@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".//cinematica.css">
+    <title>Tabela de Verificação</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="fundo">
+    <h1>Avaliação Cinemática</h1> <!-- Título adicionado aqui -->
+    <table>
+        <thead>
+            <tr>
+                <th>Opção</th>
+                <th>Sim</th>
+                <th>Não</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="checkbox-group">
+                <td>Distúrbio de comportamento</td>
+                <td>
+                    <input type="checkbox" id="opcao1_sim" name="opcao1" value="Sim">
+                    <label for="opcao1_sim"></label>
+                </td>
+                <td>
+                    <input type="checkbox" id="opcao1_nao" name="opcao1" value="Não">
+                    <label for="opcao1_nao"></label>
+                </td>
+            </tr>
+            <tr class="checkbox-group">
+            <td>Encontrado de capacete</td>
+                <td>
+                    <input type="checkbox" id="opcao2_sim" name="opcao2" value="Sim">
+                    <label for="opcao2_sim"></label>
+                </td>
+                <td>
+                    <input type="checkbox" id="opcao2_nao" name="opcao2" value="Não">
+                    <label for="opcao2_nao"></label>
+                </tr>
+                <tr class="checkbox-group">
+                    <td>Encontrado de cinto</td>
+                        <td>
+                            <input type="checkbox" id="opcao3_sim" name="opcao3" value="Sim">
+                            <label for="opcao3_sim"></label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="opcao3_nao" name="opcao3" value="Não">
+                            <label for="opcao3_nao"></label>
+                        </tr>
+                        <tr class="checkbox-group">
+                            <td>Para-brisas avariado</td>
+                                <td>
+                                    <input type="checkbox" id="opcao4_sim" name="opcao4" value="Sim">
+                                    <label for="opcao4_sim"></label>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="opcao4_nao" name="opcao4" value="Não">
+                                    <label for="opcao4_nao"></label>
+                                </tr>
+                                <tr class="checkbox-group">
+                                    <td>Caminhando na cena</td>
+                                        <td>
+                                            <input type="checkbox" id="opcao5_sim" name="opcao5" value="Sim">
+                                            <label for="opcao5_sim"></label>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" id="opcao5_nao" name="opcao5" value="Não">
+                                            <label for="opcao5_nao"></label>
+                                        </tr>
+                                            <tr class="checkbox-group">
+                                                <td>Painel avariado</td>
+                                                    <td>
+                                                        <input type="checkbox" id="opcao6_sim" name="opcao6" value="Sim">
+                                                        <label for="opcao6_sim"></label>
+                                                    </td>
+                                                    <td>
+                                                        <input type="checkbox" id="opcao6_nao" name="opcao6" value="Não">
+                                                        <label for="opcao6_nao"></label>
+                                                    </tr>
+                                                    <tr class="checkbox-group">
+                                                        <td>Volante torcido</td>
+                                                            <td>
+                                                                <input type="checkbox" id="opcao7_sim" name="opcao7" value="Sim">
+                                                                <label for="opcao7_sim"></label>
+                                                            </td>
+                                                            <td>
+                                                                <input type="checkbox" id="opcao7_nao" name="opcao7" value="Não">
+                                                                <label for="opcao7_nao"></label>
+                                                            </tr>
+</div>
+            <!-- Resto das linhas da tabela -->
+        </tbody>
+    </table>
+    <br>
+    <a class="botaocadastrar" href="termos.html">
+        <div class="q5" >
+         ENVIAR
+        </div>
+    </a>
+    <br>
+    <script>
+        const checkboxes = document.querySelectorAll('.checkbox-group input[type="checkbox"]');
+        
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                if (this.checked) {
+                    checkboxes.forEach(otherCheckbox => {
+                        if (otherCheckbox !== this && otherCheckbox.name === this.name) {
+                            otherCheckbox.checked = false;
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

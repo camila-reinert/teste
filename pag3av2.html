@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avpacientemaior</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D8C4FF;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #8C52FF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: white;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .submit-button {
+            background-color: #00BF63;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .submit-button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliação maiores de 5 anos</h1>
+        <form>
+            <div class="section">
+                <h2>Abertura Ocular:</h2>
+                <label>
+                    <input type="checkbox" name="abertura_ocular" value="Espontânea"> Espontânea (4)
+                </label>
+                <label>
+                    <input type="checkbox" name="abertura_ocular" value="Comando Verbal"> Comando Verbal (3)
+                </label>
+                <label>
+                    <input type="checkbox" name="abertura_ocular" value="Estímulo Doloroso"> Estímulo Doloroso (2)
+                </label>
+                <label>
+                    <input type="checkbox" name="abertura_ocular" value="Nenhuma"> Nenhuma (1)
+                </label>
+            </div>
+
+            <div class="section">
+                <h2>Resposta Verbal:</h2>
+                <label>
+                    <input type="checkbox" name="resposta_verbal" value="PALAVRAS E FRASE APROPRIADAS"> Orientado (5)
+                </label>
+                <label>
+                    <input type="checkbox" name="resposta_verbal" value="PALAVRAS INAPROPRIADAS"> confuso (4)
+                </label>
+                <label>
+                    <input type="checkbox" name="resposta_verbal" value="CHORO PERSISTENTE OU GRITOS"> Palavras inapropriadas (3)
+                </label>
+                <label>
+                    <input type="checkbox" name="resposta_verbal" value="SONS IMCOMPREENSÍVEIS"> Palavras incompreensíveis (2)
+                </label>
+                <label>
+                    <input type="checkbox" name="resposta_verbal" value="NENHUMA RESPOSTA VERBAL"> Nenhuma (1)
+                </label>
+            </div>
+
+            <div class="section">
+                <h2>Resposta Motora:</h2>
+                <label>
+                    <input type="checkbox" name="resposta_motora" value="OBEDECE PRONTAMENTE"> Obedece comandos (6)
+                </label>
+                <label>
+                    <input type="checkbox" name="resposta_motora" value="LOCALIZA DOR OU ESTÍMULO TÁTIL"> Localiza Dor (5)
+                </label>
+                <label>
+                    <input type="checkbox" name="resposta_motora" value="RETIRADA DO SEGMENTO ESTIMULADO"> Movimento de retirada (4)
+                </label>
+                <label>
+                    <input type="checkbox" name="resposta_motora" value="FLEXÃO ANORMAL (DECORTICAÇÃO)"> Flexão Anormal (Decorticação) (3)
+                </label>
+                <label>
+                    <input type="checkbox" name="resposta_motora" value="EXTENSÃO ANORMAL (DECEREBRAÇÃO)"> Extensão Anormal (Decerebração) (2)
+                </label>
+                <label>
+                    <input type="checkbox" name="resposta_motora" value="AUSÊNCIA (PARALISIA FLÁCIDA, HIPOTONIA)"> Nenhum (1)
+                </label>
+            </div>
+            <label for="local">Total (GCS)(3-15):</label>
+            <input type="total" id="nome" name="number">
+        </div>
+
+        <div class="center">
+            <input type="submit" class="submit-button" value="Enviar">
+        </div>
+        </form>
+    </div>
+</body>
+</html>

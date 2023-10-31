@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Paciente (Nível de Consciência)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D8C4FF;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #8C52FF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: white;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .section {
+            margin-top: 20px;
+        }
+
+        .center {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #8C52FF;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+            color: white;
+        }
+        .form-group {
+        display: flex;
+        align-items: center; /* Centraliza verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        color:#000;
+    }
+
+    .checkbox-label {
+        display: inline-block;
+        margin-right: 10px;
+        text-align: left;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    
+    .checkbox-label input[type="checkbox"]:checked {
+        background-color: #8C52FF;
+    }
+        input[type="text"],
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .center {
+            text-align: center;
+        }
+        .submit-button {
+            background-color: #00BF63;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .submit-button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Decisão transporte</h1>
+        <form>
+            <div class="section">
+                <h2>Dec. transporte</h2>
+                <label>
+                    <input type="checkbox" name="Dec. transporte" value="Espontânea"> Crítico
+                </label>
+                <label>
+                    <input type="checkbox" name="Dec. transporte" value="Comando Verbal"> Instável
+                </label>
+                <label>
+                    <input type="checkbox" name="Dec. transporte" value="Estímulo Doloroso"> Estável
+                </label>
+                <label>
+                    <input type="checkbox" name="Dec. transporte" value="Estímulo Doloroso"> Potencialmente instável
+                </label>
+            </div>
+
+            <div class="container">
+                <h1>Dec. Transporte</h1>
+                <form>
+                    <label>M:</label>
+                    <input type="text" name="M">
+                    <label for="idade">S1:</label>
+                    <input type="text" name="S1">
+                    <label>S2:</label>
+                    <input type="text" name="S2">
+                    <label>Demante:</label>
+                    <input type="text" name="Demante">
+                </div>
+
+        <div class="center">
+            <input type="submit" class="submit-button" value="Enviar">
+        </div>
+        </form>
+    </div>
+</body>
+</html>

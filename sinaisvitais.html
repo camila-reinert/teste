@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".//sinaisvitais.css">
+    <title>sinaisvitais</title>
+    <style>
+    
+
+
+</style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sinais Vitais</h1>
+        <form>
+            <label>Pressão arterial(mmHg):</label>
+            <input type="text" name="nome">
+            
+            <label for="idade">Pulso(BSPM):</label>
+            <input type="text" name="idade">
+            
+            <label>Respiração(M.R.M):</label>
+            <input type="text" name="rg_cpf">
+            
+            <label>Saturação(%HGT):</label>
+            <input type="text" name="fone">
+            
+            <!-- Seção de Temperatura -->
+            <h2>Temperatura(°C)</h2>
+            <div class="form-group">
+                <input type="text" name="temperatura" placeholder="Digite a temperatura">
+
+                <label class="checkbox-label" for="anormalCheckbox">
+                    <input type="checkbox" id="anormalCheckbox" name="anormal" value="anormal"> Anormal
+                    <br>
+                    <br>
+                </label>
+            </div>
+            
+            <!-- Seção de Perfusão -->
+            <h2>Perfusão</h2>
+            <div class="form-group">
+                 <label class="checkbox-label" for="maior_que_2segCheckbox">
+            <input type="checkbox" id="maior_que_2segCheckbox" name="perfusao" value="maior_que_2seg"> 2seg
+                </label>
+            <label class="checkbox-label" for="menor_que_2segCheckbox">
+                <input type="checkbox" id="menor_que_2segCheckbox" name="perfusao" value="menor_que_2seg"> menor 2seg
+            </label>
+            <label class="checkbox-label" for="normalCheckbox">
+            <input type="checkbox" id="normalCheckbox" name="perfusao" value="normal"> Normal
+            </label>
+</div>
+
+            <!-- Adicione mais campos aqui conforme necessário -->
+
+            <a class="botaocadastrar" href="decisaotrans.html">
+                <div class="q5" >
+                 ENVIAR
+                </div>
+            </a>
+        </form>
+    </div>
+</body>
+</html>

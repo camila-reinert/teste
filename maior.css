@@ -1,0 +1,178 @@
+body
+{
+font-family: Arial, sans-serif;
+background-color: #D8C4FF;
+}
+.container 
+{
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+background-color: #8C52FF;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+border-radius: 5px;
+}
+h1
+{
+margin-left: 1px;
+text-align: center;
+color: white;
+}
+.imagen
+{
+margin-top: 4px;
+margin-left: 20px;
+}
+.texto{
+width: 250px;
+margin-left: 30px;
+margin-top: -22px;
+color: white;
+}
+.coluna
+{
+border-style:solid; 
+border-color: #d7bafd; 
+width: 280px; 
+height: 279px; 
+background-color: white;
+margin-left: 10px;
+}
+.coluna1
+{
+width: 140px;
+margin-left: 0;
+}
+.coluna2
+{
+width: 130px;
+height: 182px;
+margin-left: 150px;
+margin-top: -270px;
+}
+.colunacentro
+{
+width: 300px;
+margin-top: 50px;
+}
+.imagen
+{
+width: 250px;
+}
+.fraturas
+{
+border-style:solid; 
+border-color: #d7bafd; 
+width: 20px; 
+height: 20px; 
+border-radius: 20px; 
+background-color: rgb(245, 46, 46);
+}
+.ferimentos
+{
+border-style:solid; 
+border-color: #d7bafd; 
+width: 20px; 
+height: 20px; 
+border-radius: 20px; 
+background-color: rgb(245, 126, 46);
+}
+.hemorragias
+{
+border-style:solid; 
+border-color: #d7bafd; 
+width: 20px; 
+height: 20px; 
+border-radius: 20px; 
+background-color: rgb(245, 199, 46);
+}
+.q1
+{
+border-style:solid; 
+border-color: #d7bafd; 
+width: 20px; 
+height: 20px; 
+border-radius: 20px; 
+background-color: rgb(126, 245, 46);
+}
+.q2
+{
+border-style:solid; 
+border-color: #d7bafd; 
+width: 20px; 
+height: 20px; 
+border-radius: 20px; 
+background-color: rgb(46, 245, 136);
+}
+.q3
+{
+border-style:solid; 
+border-color: #d7bafd; 
+width: 20px; 
+height: 20px; 
+border-radius: 20px; 
+background-color: rgb(46, 199, 245);
+}
+.esviceração
+{
+border-style:solid; 
+border-color: #d7bafd; 
+width: 20px; 
+height: 20px; 
+border-radius: 20px; 
+background-color: rgb(46, 126, 245);
+}
+.f
+{
+border-style:solid; 
+border-color: #d7bafd; 
+width: 20px; 
+height: 20px; 
+border-radius: 20px; 
+background-color: rgb(43, 20, 80);
+}
+.amputação
+{
+border-style:solid; 
+border-color: #d7bafd; 
+width: 20px; 
+height: 20px; 
+border-radius: 20px; 
+background-color: rgb(207, 43, 207);
+}
+.texto{
+width: 100px;
+}
+tr{
+border-style:solid; 
+border-color: black; 
+color: white;
+}
+th{
+width:200px;
+}
+td{
+height: 25px;
+}
+.botaocadastrar
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C1FF72;
+  background-color: #00BF63;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 20px;
+  margin-left: 78px;
+  text-decoration: none;
+  text-align: center;
+  }
+

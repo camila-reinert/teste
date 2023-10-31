@@ -1,0 +1,72 @@
+body 
+{
+  width: 100%;
+  height: 100%;
+  background-color: #6824ED;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.fundo{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-image: url("imagens/backgroud.png");
+  background-size: 120%;
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+.logintext{
+  color: white; 
+  font-size: 50px; 
+  font-family: 'Kanit', sans-serif;
+  margin-top: 20px; 
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+.inputtextlogin
+{
+margin-top: 10px;    
+margin-left: 0px;
+border: none;
+width: 250px;
+height: 40px;
+border-radius: 10px;
+font-family: 'Roboto', sans-serif;
+padding-left: 10px;
+font-size: 15px;
+}
+.inputtextlogin:focus{
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+.botaoentrarlogin{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 10px;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C1FF72;
+  background-color: #00BF63;
+  border-radius: 10px;
+  font-size: 15px;
+}

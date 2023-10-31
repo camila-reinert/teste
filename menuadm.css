@@ -1,0 +1,144 @@
+body
+{
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg,rgb(22, 255, 224), rgb(3, 91, 255));
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+.cabecalho
+{
+    width: 100%;
+    height: 10vh;
+    background-color: red;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    color: white;
+}
+.icon
+{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    background-color: rgba(240, 248, 255, 0);
+}
+.logo
+{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(240, 248, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+.principal
+{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(91, 175, 175, 0.507);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: row;
+}
+.edit
+{
+    width: 30%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    color: white;
+    font-size: 25px;
+}
+.ver
+{
+    width: 30%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    color: white;
+    font-size: 25px;
+}
+.img1
+{
+    width: 80%;
+    height: 55vh;
+    background-color: rgba(240, 248, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    color: white;
+}
+.img2
+{
+    width: 80%;
+    height: 55vh;
+    background-color: rgba(165, 186, 204, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    color: white;
+}
+.letreiro
+{
+    width: 100%;
+    height: 20vh;
+    margin: 0px;
+    border-radius: 30px;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+}
+.final
+{
+    width: 100%;
+    height: 10vh;
+    margin: -50px;
+    background-color: red;
+}
