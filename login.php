@@ -47,7 +47,7 @@ if($n == 1)
 
     } 
     else{
-        header("location:pag1.html");
+        header("location:paciente.html");
         $_SESSION['usuario_logado']=$linhas["email"];
     }
 }

@@ -12,74 +12,71 @@
 
 </head>
 <body>
+    <Form action="anamnese.php" method="post" >
     <div class="container">
-    <form action="inserir.php" method="post" class="fundo">
         <h1>Anamnese</h1>
         <fieldset>
         <label> O que aconteceu(sinais e sintomas) </label>
         <br>
-        <input type="text" name="O_que_aconteceu" class="text">
+        <input type="text" name="s1" class="text">
         </fieldset>
         <br>
         <fieldset>
             <label> Aconteceu outras vezes?</label> 
-            <input type="checkbox" id="checkbox" name="Aconteceu_outras_vezes"> sim <input type="checkbox" id="checkbox" name="Aconteceu_outras_vezes"> não
+            <input type="checkbox" id="checkbox" name="c1"> sim <input type="checkbox" id="checkbox" name="c2"> não
+            <br>
             <br>
             <label>A quanto tempo isso aconteceu?</label>
             <br>
-            <input type="text" name="A_quanto_tempo_isso_aconteceu" class="text">
+            <input type="text" name="s2" class="text">
         </fieldset>
         <br>
         <fieldset>
             <label>Possui algum problema de saúde?</label>
             <br>
-            <input type="checkbox" id="checkbox" name="Possui_algum_problema_de_saude"> sim <input type="checkbox" id="checkbox" name="Possui_algum_problema_de_saude"> não
+            <input type="checkbox" id="checkbox" name="c3"> sim <input type="checkbox" id="checkbox" name="c4"> não
             <br>
             <label>Quais?</label>
             <br>
-            <input type="text" name="Quais_problemas" class="text">
+            <input type="text" name="s3" class="text">
         </fieldset>
         <br>
         <fieldset>
             <label>Faz uso de medicação?</label>
             <br>
-            <input type="checkbox" id="checkbox" name="Faz_uso_de_medicacao"> sim <input type="checkbox" id="checkbox" name="Faz_uso_de_medicacao"> não
+            <input type="checkbox" id="checkbox" name="c5"> sim <input type="checkbox" id="checkbox" name="c6"> não
             <br>
             <label>Quais?</label>
             <br>
-            <input type="text" name="Quais_medicacoes" class="text">
+            <input type="text" name="s4" class="text">
             <br>
             <label>Horário da ultima medicação</label>
             <br> 
-            <input type="time" name="Horario_da_ultima_medicacao" class="text">
+            <input type="time" name="s5" class="text">
         </fieldset>
         <br>
         <fieldset>
            <label>Alérgico a algo?</label> 
            <br>
-           <input type="checkbox" id="checkbox" name="Alergico_a_algo"> sim <input type="checkbox" id="checkbox" name="Alergico_a_algo"> não
+           <input type="checkbox" id="checkbox" name="c7"> sim <input type="checkbox" id="checkbox" name="c8"> não
            <br>
            <label>Especifique:</label>
            <br>
-           <input type="text" name="Especifique" class="text">
+           <input type="text" name="s6" class="text">
         </fieldset>
         <br>
         <fieldset>
             <label>Ingeriu alimento ou liquido >=6h</label>
             <br>
-            <input type="checkbox" id="checkbox" name="Ingeriu_alimento_ou_liquido_mais_seish"> sim <input type="checkbox" id="checkbox" name="Ingeriu_alimento_ou_liquido_mais_seish"> não
+            <input type="checkbox" id="checkbox" name="c9"> sim <input type="checkbox" id="checkbox" name="c10"> não
             <br>
             <label>Que horas?</label>
             <br>
-            <input type="time" name="Que_horas" class="text">
+            <input type="time" name="s7" class="text">
         </fieldset>
+        <br>
+        <input type="submit" value="ENVIAR" >
     </div>
-
-        <div class="botaocadastrar" >
-         ENVIAR
-        </div>
-    </form>
- 
-    
+</Form>
 </body>
 </html>

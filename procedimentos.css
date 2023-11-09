@@ -64,24 +64,21 @@ h1 {
         border: 1px solid #ccc;
         border-radius: 3px;
     }
-    .botaocadastrar
-{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    justify-items: center;
-    width: 150px;
-    height: 40px;
-    color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #C1FF72;
-    background-color: #00BF63;
-    border-radius: 10px;
-    font-size: 15px;
-    margin: 20px;
-    margin-left: 75px;
-    text-decoration: none;
-    text-align: center;
-    }
+    .botaoentrarlogin{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: 10px;
+        width: 150px;
+        height: 40px;
+        color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #C1FF72;
+        background-color: #00BF63;
+        border-radius: 10px;
+        font-size: 15px;
+        margin-left: 90px;
+      }

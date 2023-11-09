@@ -34,13 +34,13 @@ h1 {
 .submit-button:hover {
     background-color: red;
 }
-.botaocadastrar
-{
+.botaoentrarlogin{
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     justify-items: center;
+    margin: 10px;
     width: 150px;
     height: 40px;
     color: white;
@@ -50,8 +50,5 @@ h1 {
     background-color: #00BF63;
     border-radius: 10px;
     font-size: 15px;
-    margin: 20px;
-    margin-left: 75px;
-    text-decoration: none;
-    text-align: center;
-    }
+    margin-left: 90px;
+  }
